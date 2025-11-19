@@ -1,6 +1,6 @@
 fn main() {
 
-    let _b: (i32,bool,f64) = (110,true,10.0);
+    let b: (i32,bool,f64) = (110,true,10.0);
     println!("b");
 
 }
