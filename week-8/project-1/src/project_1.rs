@@ -19,7 +19,7 @@ fn main(){
     println!("                  \nHello                       ");
     println!("      \nWelcome to the APS level checker         ");
     println!("        \nFederal Government of Nigeria          ");
-    println!("-----------------------------------------------\n");
+    println!("------------------------------------------------\n");
 
 
     //FIELDS LIST
@@ -96,7 +96,7 @@ fn main(){
         }
 
         _ => {
-            println!("Invalid field seletion. Exiting the program.");
+            println!("Invalid field selection. Exiting the program.");
             return;
         }
     
@@ -113,10 +113,9 @@ fn main(){
         for(aps_level,roles) in &field_map {
             for r in roles {
                 if r.to_lowercase() == role {
-                    println!("\n------------------------------");
+                   
                     println!("Your role corresponds to APS level: {}", aps_level.to_uppercase());
-                    println!("----------------------------------");
-
+                   
                     found = true;
                     break;
                 }
