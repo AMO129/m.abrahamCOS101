@@ -2,3 +2,4 @@
 MY RUST PROGRAMMING LANGUAGE JOURNEY
 Hello user
 I just learnt how to append in Rust programming language
+hey
