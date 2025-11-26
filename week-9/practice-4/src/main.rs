@@ -13,6 +13,8 @@ fn main(){
         "failed to write");
     println!("file updated successfully");
 
+    //Accepting user input
+
     println!("Enter a text");
     let mut user_input =String::new();
     io::stdin().read_line(&mut user_input).expect("failed to input");
