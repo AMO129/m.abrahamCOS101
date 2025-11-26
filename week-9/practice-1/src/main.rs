@@ -5,6 +5,8 @@ fn main() {
     let announce = "Week 9 - Rust File Input & Output\n";
     let dept = "Department of Software Engineering";
 
+    //file creation
+
     let mut file = std::fs::File::create("data.txt").expect("creation failed");
     file.write_all("Welcome to Rust Programming\n".as_bytes())
     .expect("write failed");
