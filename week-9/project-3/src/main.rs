@@ -1,12 +1,13 @@
 use std::fs::File;
 use std::io::{self, Write};
 
-fn main() -> io::Result<()>{
+fn main() {
 
 
     //COLUMNS
 
     let s = vec![
+    "S/N",
     "1",
     "2",
     "3",
@@ -15,6 +16,7 @@ fn main() -> io::Result<()>{
     ];
 
     let names = vec![
+    "NAMES OF MINISTERS",
     "Mirabel Ojo",
     "Umar Gusau",
     "Yakubu John",
@@ -24,6 +26,7 @@ fn main() -> io::Result<()>{
     ];
 
     let ministry = vec![
+    "MINISTRY",
     "Fnternal Affairs",
     "Foreign Affairs",
     "Defense",
@@ -32,6 +35,7 @@ fn main() -> io::Result<()>{
     ];
 
     let geopolitacal_zone = vec![
+    "GEOPOLITICAL ZONE",
     "South West",
     "North West",
     "North central",
@@ -47,8 +51,8 @@ fn main() -> io::Result<()>{
 
     //WRITING TABLE HEADERS
 
-    writeln!(file, "{},{},{},{}", 
-                    "S/N","NAMES OF MINISTERS","MINISTRY","GEOPOLITICAL ZONE").expect("Failed to write");
+   // writeln!(file, "{},{},{},{}", 
+                   // "S/N","NAMES OF MINISTERS","MINISTRY","GEOPOLITICAL ZONE").expect("Failed to write");
 
 
     //ALLOWS THE DATA TO BE ENTERED ROW BY ROW AND SIDE BY SIDE
@@ -63,9 +67,6 @@ fn main() -> io::Result<()>{
 
 
     println!("EFCC file created successfully");
-
-    Ok(())
-
 
 
 

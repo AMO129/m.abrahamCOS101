@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::{self, Write};
 
 
-fn main() -> io::Result<()>{
+fn main() {
 
     //Table columns
     let lager = vec![
@@ -40,9 +40,9 @@ fn main() -> io::Result<()>{
     //Write table header
     writeln!(
         file,
-        "{:<20} | {:<20}  | {:<20}",
+        "{:<20} | {:<20} | {:<20}",
         "Lager", "Stout", "Non-Alcoholic" 
-    )?;
+    ).expect("Failed to write");
 
     writeln!(file, "{}", "-".repeat(66)).expect("Failed to write");
 
@@ -59,8 +59,6 @@ fn main() -> io::Result<()>{
     }
 
     println!("file created successfully");
-
-    Ok(())
 
 
 }

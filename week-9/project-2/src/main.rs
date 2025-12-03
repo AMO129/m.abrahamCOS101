@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::{self, Write};
 
 
-fn main() -> io::Result<()>{
+fn main() {
 
     //Table columns
     let student_name = vec![
@@ -46,8 +46,7 @@ fn main() -> io::Result<()>{
     writeln!(file, "PAU SMIS");
     writeln!(
         file, "{},{},{},{}",
-         "Student Name", "Matric. Number", "Department", "Level"
-    ).expect("failed to write");
+         "Student Name", "Matric. Number", "Department", "Level").expect("failed to write");
 
 
     // write rows side by side 
@@ -64,7 +63,6 @@ fn main() -> io::Result<()>{
 
     println!("file created successfully");
 
-    Ok(())
 
 
 }
