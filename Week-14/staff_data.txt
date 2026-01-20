@@ -1,0 +1,11 @@
+Globacom Database Export: staff
+========================================
+| "staff_id" | "staff_name" | "dno" | "staff_sal" | "age" | "mobile" 
+| "staff_id" | "staff_name" | "dno" | "staff_sal" | "age" | "mobile" 
+| "staff_id" | "staff_name" | "dno" | "staff_sal" | "age" | "mobile" 
+| "staff_id" | "staff_name" | "dno" | "staff_sal" | "age" | "mobile" 
+| "staff_id" | "staff_name" | "dno" | "staff_sal" | "age" | "mobile" 
+| "staff_id" | "staff_name" | "dno" | "staff_sal" | "age" | "mobile" 
+| "staff_id" | "staff_name" | "dno" | "staff_sal" | "age" | "mobile" 
+| "staff_id" | "staff_name" | "dno" | "staff_sal" | "age" | "mobile" 
+| "staff_id" | "staff_name" | "dno" | "staff_sal" | "age" | "mobile" 

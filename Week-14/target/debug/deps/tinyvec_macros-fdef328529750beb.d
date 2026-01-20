@@ -1,0 +1,7 @@
+C:\Users\NEW\Documents\m.abrahamCOS101\Week-14\target\debug\deps\tinyvec_macros-fdef328529750beb.d: C:\Users\NEW\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec_macros-0.1.1\src\lib.rs
+
+C:\Users\NEW\Documents\m.abrahamCOS101\Week-14\target\debug\deps\libtinyvec_macros-fdef328529750beb.rlib: C:\Users\NEW\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec_macros-0.1.1\src\lib.rs
+
+C:\Users\NEW\Documents\m.abrahamCOS101\Week-14\target\debug\deps\libtinyvec_macros-fdef328529750beb.rmeta: C:\Users\NEW\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec_macros-0.1.1\src\lib.rs
+
+C:\Users\NEW\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tinyvec_macros-0.1.1\src\lib.rs:
