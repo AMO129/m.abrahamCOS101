@@ -3,19 +3,19 @@ use std::fs::File;
 use std::io::{self, Write};
 
 fn main() {
-    // 1. Establish the connection
+    //Establishing the connection
     let mut client = Client::connect("host=localhost user=postgres password=cos101 dbname=globacom_dbase", NoTls)
         .expect("Failed to connect to database. Ensure PostgreSQL is running and password is correct.");
 
     println!("Welcome to Globacom Database Portal");
     println!("Please enter your role (admin, project manager, employee, customer, vendor):");
 
-    // 2. Capture user input
+    //Collecting user input
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
     let role_input = input.trim().to_lowercase();
 
-    // 3. Logic based on Globacom criteria
+    //Criteria
     match role_input.as_str() {
         "admin" => {
             process_request(&mut client, "ALL", "SELECT table_name, column_name, data_type FROM information_schema.columns WHERE table_schema = 'public'");
@@ -37,7 +37,7 @@ fn main() {
 }
 
 fn process_request(client: &mut Client, table_name: &str, data_query: &str) {
-    // --- PART A: Display Structure on CMD ---
+    //Display Structure on cmd
     println!("\n[CMD DISPLAY] Structure for Table: {}", table_name);
     println!("{:-<45}", "");
     
@@ -56,8 +56,8 @@ fn process_request(client: &mut Client, table_name: &str, data_query: &str) {
         println!("{:<20} | {:<20}", col, dtype);
     }
 
-    // --- PART B: Export Actual Data to File ---
-    let file_path = format!("{}_data.txt", table_name);
+    //Exporting Actual Data File
+    let file_path = format!("{}_data.csv", table_name);
     let mut file = File::create(&file_path).expect("Could not create output file");
     
     let data_rows = client.query(data_query, &[]).expect("Failed to fetch table data");
@@ -74,5 +74,5 @@ fn process_request(client: &mut Client, table_name: &str, data_query: &str) {
         writeln!(file, "{}", row_output).unwrap();
     }
 
-    println!("\n[FILE EXPORT] Actual rows saved to: {}", file_path);
+    println!("\n[FILE EXPORTED] Actual data saved to: {}", file_path);
 }
